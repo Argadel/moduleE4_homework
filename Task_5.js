@@ -3,22 +3,19 @@
 
 class Gadgets {
 
-    constructor(type, power)
-    {
+    constructor(type, power) {
         this.type = type;
         this.power = power;
         this.isSwithcedOn = false;
     }
 
-    switchIn()
-    {
+    switchIn() {
         console.log(this.type + ' is switched on!');
         console.log('Its power is ' + this.power);
         this.isSwithcedOn = true;
     }
 
-    getUsedPower()
-    {
+    getUsedPower() {
         return this.isSwithcedOn ? this.power : 0;
     }
 }
